@@ -18,12 +18,28 @@ const SearchResult = ({
     return (
         <SearchResultWrapper>
             {list && keyword && list.length > 0 ? (
-                list.slice(0, 10).map((result, idx) => {
+                list.map((result, idx) => {
                     return (
                         <SearchResultItem
                             key={result + idx}
                             onClick={() => {
-                                clickListener(result);
+                                console.log(
+                                    "kye",
+                                    result.slice(
+                                        0,
+                                        result.indexOf("...") !== -1
+                                            ? result.indexOf("...")
+                                            : result.indexOf("/")
+                                    )
+                                );
+                                clickListener(
+                                    result.slice(
+                                        0,
+                                        result.indexOf("...") !== -1
+                                            ? result.indexOf("...")
+                                            : result.indexOf("/")
+                                    )
+                                );
                             }}
                         >
                             {" "}

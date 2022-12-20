@@ -46,34 +46,6 @@ const MypageLayout = () => {
         setModalVisible(false);
     }, []);
 
-    const UnsmileEmoji = "../../assets/unsmile_emoji.png";
-    const coments: any[] = [
-        {
-            day: "8일",
-            score: 5,
-            content: "최고에요",
-            emojiType: 1,
-        },
-        {
-            day: "8일",
-            score: 5,
-            content: "최고에요",
-            emoji: UnsmileEmoji,
-        },
-        {
-            day: "8일",
-            score: 2,
-            content: "최고에요",
-            emoji: UnsmileEmoji,
-        },
-        {
-            day: "8일",
-            score: 3,
-            content: "최고에요",
-            emoji: UnsmileEmoji,
-        },
-    ];
-
     const [tab, setTab] = useState("main");
 
     const getTabPage = () => {

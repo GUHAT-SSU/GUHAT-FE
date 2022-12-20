@@ -45,14 +45,14 @@ const RecruitView = () => {
         if (data?.isOwner) {
             setApplyState(false);
             closeRecruit(id!!)
-                .catch((err) => {
-                    alert(err.response.data.message);
-                })
                 .then((res) => {
                     console.log(res);
                     if (res?.data.status < 400) {
                         alert("모집을 마감했습니다!");
                     }
+                })
+                .catch((err) => {
+                    alert(err.response.data.message);
                 });
         } else setModalVisible(true);
     };

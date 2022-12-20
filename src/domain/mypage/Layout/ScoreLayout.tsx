@@ -25,7 +25,7 @@ const ScoreLayoutContainer = styled.div`
 
 export const ScoreWrapper = styled.div`
     display: flex;
-    width: 8vw;
+    width: 20%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ export const ScoreWrapper = styled.div`
 `;
 
 const CommentLayout = styled.div`
-    width: 22vw;
+    width: 50%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,13 @@ const ScoreLayout = ({ comments }: { comments: any[] | [] }) => {
                     </ScoreWrapper>
 
                     <div
-                        style={{ display: "flex", gap: "10px", width: "10vw" }}
+                        style={{
+                            display: "flex",
+                            gap: "0.6rem",
+                            width: "15%",
+                            maxWidth: "20%",
+                            marginRight: "2rem",
+                        }}
                     >
                         <ScoreProgress
                             label="1점"

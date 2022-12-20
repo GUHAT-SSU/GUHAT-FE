@@ -29,7 +29,6 @@ export interface IReviewHistory {
     clickListener?: () => void;
 }
 const ReviewHistory = ({ ...props }: IReviewHistory) => {
-    console.log(props);
     const navigator = useNavigate();
     return (
         <ReviewHistoryContainer

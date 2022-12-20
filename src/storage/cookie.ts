@@ -11,13 +11,7 @@ export const setRefreshToken = (refreshToken: refreshTokenType) => {
     //더 짧게 설정
     localStorage.setItem(
         "expiresAt",
-        moment().add(6, "day").format("yyyy-MM-DD HH:mm:ss")
-        //moment().add(1, "hour").format("yyyy-MM-DD HH:mm:ss")
-    );
-    console.log(
-        `new Exipre date : ${moment()
-            .add(1, "day")
-            .format("yyyy-MM-DD HH:mm:ss")}`
+        moment().add(1, "hour").format("yyyy-MM-DD HH:mm:ss")
     );
 
     return cookies.set("refresh_token", refreshToken, {

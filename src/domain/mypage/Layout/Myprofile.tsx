@@ -61,7 +61,7 @@ const MyProfileImgWrapper = styled.div`
         background-image: ${`url(${DefaultIcon})`};
         background-color: ${themes.colors.gray_100};
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .sub-circle {
@@ -109,7 +109,7 @@ const Myprofile = ({ ...props }: Props) => {
                                         ? `url(${userInfo.profileImg})`
                                         : DefaultIcon
                                 }`,
-                                backgroundSize: "contain",
+
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
                             }}

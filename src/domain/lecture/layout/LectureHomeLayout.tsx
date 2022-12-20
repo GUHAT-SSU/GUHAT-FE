@@ -68,7 +68,9 @@ const LectureHomeLayout = () => {
             case "review":
                 return (
                     <>
-                        <ReviewListLayout list={result[2].data!!} />
+                        <ReviewListLayout
+                            list={result[2]?.data ? result[2]?.data : []}
+                        />
                     </>
                 );
         }

@@ -130,7 +130,7 @@ const AboutMeLayout = ({ ...props }) => {
                     className="circle main-circle"
                     style={{
                         backgroundImage: `url(${props.profileImg})`,
-                        backgroundSize: "contain",
+                        backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
                     }}

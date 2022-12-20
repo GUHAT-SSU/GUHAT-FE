@@ -3,6 +3,7 @@ import {
     Progress,
     ProgressWrapper,
 } from "@/components/History/LectureHistory.style";
+import { displayLevel } from "@/util/displayLevel";
 import { useNavigate } from "react-router-dom";
 import { calculateData } from "../../../util/calculateData";
 import { RecruitItemContainer } from "./RecruitListItem.style";
@@ -49,7 +50,7 @@ const RecruitListItem = ({ ...props }: Props) => {
             <div className="content-wrapper">
                 <p className="bold">D-{calculateData(props.endDate)}</p>
                 <p className="bold">{props.writer.nickname}</p>
-                <p className="level">{props.writer.level}</p>
+                <p className="level">{displayLevel(props.writer.level)}</p>
             </div>
             <p
                 className="day-wrapper"

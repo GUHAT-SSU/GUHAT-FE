@@ -8,6 +8,7 @@ export const LandingLayout = styled.div`
     background-color: blue;
     left: -10rem;
     top: -7rem;
+    font-size: 1.2rem;
 `;
 
 export const LandingBgLayout = styled.div`
@@ -58,18 +59,20 @@ export const LandingBgLayout = styled.div`
 
 export const LoginFormLayout = styled.div`
     position: absolute;
+    width: 100%;
     right: 0;
     background-color: white;
-    width: 38%;
+    width: 36%;
     height: calc(100vh + 7rem);
     padding-top: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    font-size: 1.2rem;
 
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 `;
 

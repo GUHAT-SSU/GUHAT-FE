@@ -48,7 +48,7 @@ const MyProfile = ({ ...props }) => {
                     <p className="profile-label">진행중인 팀플</p>
                 </MyprofileinfoWrap>
                 <MyprofileinfoWrap>
-                    <p className="profile-number">4.4</p>
+                    <p className="profile-number">{userInfo?.reviewScore}</p>
                     <p className="profile-label">팀원들의 평가</p>
                 </MyprofileinfoWrap>
             </MyProfileInfoContainer>
@@ -69,7 +69,7 @@ const MyProfile = ({ ...props }) => {
             </div>
             <LevelProgress
                 total={total}
-                current={userInfo?.score ? userInfo.score : 0}
+                current={userInfo?.score ? userInfo?.score : 0}
                 level={displayLevel(userInfo?.level!!)}
             />
             <MyProfileBtnWrap>
