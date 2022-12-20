@@ -18,7 +18,7 @@ const SearchResult = ({
     return (
         <SearchResultWrapper>
             {list && keyword && list.length > 0 ? (
-                list.map((result, idx) => {
+                list.slice(0, 10).map((result, idx) => {
                     return (
                         <SearchResultItem
                             key={result + idx}

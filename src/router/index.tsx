@@ -1,5 +1,5 @@
 import { getCookieToken } from "@/storage/cookie";
-import { keywordState } from "@/storage/recoil/keywordState";
+import { keywordState, searchState } from "@/storage/recoil/keywordState";
 import { errorState, loadingState } from "@/storage/recoil/loadingState";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useSetRecoilState } from "recoil";
@@ -32,9 +32,11 @@ export function PrivateRoute({ Component }: React.ReactNode | any) {
     const setErrorState = useSetRecoilState(errorState);
     const setLoadingState = useSetRecoilState(loadingState);
     const setKeyword = useSetRecoilState(keywordState);
+    const setSeach = useSetRecoilState(searchState);
     setLoadingState(true);
     setErrorState(null);
     setKeyword(false);
+    setSeach("");
 
     const auth = getCookieToken();
 

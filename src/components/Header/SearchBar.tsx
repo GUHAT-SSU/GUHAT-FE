@@ -15,7 +15,7 @@ import SearchResult from "./SearchResult";
 import { debounce } from "@/util/debounce";
 import SearchIcon from "@assets/Search.svg";
 import { useRecoilState } from "recoil";
-import { keywordState } from "../../storage/recoil/keywordState";
+import { keywordState, searchState } from "../../storage/recoil/keywordState";
 
 const SearchBar = () => {
     const navigator = useNavigate();
@@ -26,7 +26,7 @@ const SearchBar = () => {
     const [active, setActive] = useRecoilState(keywordState);
     const [option, setOption] = useState(options[0]);
 
-    const [search, setSearch] = useState<string>("");
+    const [search, setSearch] = useRecoilState(searchState);
     const [apiQuery, setApiQuery] = useState<string>("");
     const [searchResult, setSeachResult] = useState<string[] | null>([]);
     const [submitted, setSubmitted] = useState<boolean>(true);
