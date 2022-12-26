@@ -33,7 +33,7 @@ const refresh = async (
                     "Access-Control-Allow-Origin": "*",
                 },
                 withCredentials: true,
-                baseURL: process.env.AUTH_BASE_URL,
+                baseURL: process.env.REACT_APP_AUTH_BASE_URL,
             })
             .then((res) => {
                 console.log(res.data);
