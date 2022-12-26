@@ -9,6 +9,7 @@ export interface IUserState {
     major?: string;
     semester?: string;
     level?: number;
+    reviewScore?: number;
     score?: number;
     profileImg: string | null;
     currentProject?: number | string;

@@ -23,7 +23,23 @@ const SearchResult = ({
                         <SearchResultItem
                             key={result + idx}
                             onClick={() => {
-                                clickListener(result);
+                                console.log(
+                                    "kye",
+                                    result.slice(
+                                        0,
+                                        result.indexOf("...") !== -1
+                                            ? result.indexOf("...")
+                                            : result.indexOf("/")
+                                    )
+                                );
+                                clickListener(
+                                    result.slice(
+                                        0,
+                                        result.indexOf("...") !== -1
+                                            ? result.indexOf("...")
+                                            : result.indexOf("/")
+                                    )
+                                );
                             }}
                         >
                             {" "}

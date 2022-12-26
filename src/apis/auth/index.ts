@@ -21,7 +21,7 @@ const getAccessToken = async () => {
                 baseURL: process.env.REACT_APP_AUTH_BASE_URL,
             })
             .then((res) => {
-                console.log(res.data.data);
+                console.log("token 달라", res.data.data);
 
                 let res_refreshToken = res.data.data.refreshToken;
 

@@ -60,7 +60,7 @@ const MyProfileImgWrapper = styled.div<{ img?: any }>`
         background-color : ${themes.colors.gray_100};
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
     }
     .sub-circle {
         position: absolute;

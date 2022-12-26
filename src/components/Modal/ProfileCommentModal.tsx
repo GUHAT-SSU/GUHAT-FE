@@ -122,8 +122,6 @@ const ProfileCommentModal = ({
             alert("작성 성공");
             window.location.reload();
         });
-
-        alert(input);
     };
     const handleRating = (rate: number) => {
         setRating(rate);

@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.7rem;
     width: 2rem;
     position: relative;
     p {
@@ -14,8 +14,8 @@ const Container = styled.div`
 
 const PrgoressWrapper = styled.div`
     position: relative;
-    width: 1.5rem;
-    height: 10rem;
+    width: 1.2rem;
+    height: 8rem;
     border-radius: 0.7rem;
     background-color: #e6e6ee;
     display: flex;
@@ -24,7 +24,7 @@ const PrgoressWrapper = styled.div`
 
 const Progress = styled.div<{ progress?: string | number; active?: boolean }>`
     position: absolute;
-    width: 1.5rem;
+    width: 1.2rem;
     border-radius: 0.7rem;
     ${({ active }) =>
         active ? `background: #6cc9ff;  ` : `background:#999999;`};

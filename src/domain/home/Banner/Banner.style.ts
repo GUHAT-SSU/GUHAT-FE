@@ -1,4 +1,4 @@
-import Banner from "@/assets/banner_main.png";
+import Banner from "@/assets/banner2.png";
 import themes from "@/styles/themes";
 import styled from "@emotion/styled";
 export const BannerWrap = styled.div`
@@ -22,8 +22,8 @@ export const BannerWrap = styled.div`
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     .more-btn {
         position: absolute;
-        bottom: 4rem;
-        right: 5rem;
+        bottom: 5rem;
+        right: 7rem;
         padding: 0.8rem 3rem;
         background-color: ${themes.colors.black_500};
         color: white;

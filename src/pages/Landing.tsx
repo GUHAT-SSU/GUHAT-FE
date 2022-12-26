@@ -85,11 +85,12 @@ const Landing = () => {
                         <div
                             style={{
                                 display: "flex",
-
+                                position: "relative",
                                 flexDirection: "column",
                                 justifyContent: "center",
-                                width: "30rem",
+                                width: "20vw",
                                 gap: "1rem",
+
                                 margin: "0 auto",
                             }}
                         >
