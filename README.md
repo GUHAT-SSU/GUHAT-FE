@@ -1,6 +1,6 @@
 ## 멋쟁이사자처럼 10기 장기프로젝트 'GUHAT'
 > 숭실대생을 위한 팀플 서포트 서비스 플랫폼
-#### guhat.netlify.app
+#### [GUHAT 바로가기](https://guhat.netlify.app)
 
 ## Skills
 
